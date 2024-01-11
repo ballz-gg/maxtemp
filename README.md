@@ -208,7 +208,7 @@ Außerdem wird überprüft ob die Tests noch funktionieren und der Code die rich
    - falls du den Branch schon einmal gepusht hast kannst du einfach `git push` benutzen
    - falls du nicht immer `git push -u origin <bearbeiter>/<ticket-id>-<name-of-ticket>` schreiben willst kannst du mit
      `git config --global push.autoSetupRemote true` einstellen das der richtige Branch und Server automatisch ausgewählt werden 
-6. Erstelle einen [Pull Request](README.md#pull-request)
+6. Erstelle einen [Pull Request](#pull-request)
    - entweder auf der Webseite von GitHub oder mit `gh pr create --base sprint` (du musst dafür das GitHub CLI installiert haben)
    - wähle als Ziel den `sprint` Branch
    - wähle als Quelle deinen Branch
@@ -216,6 +216,6 @@ Außerdem wird überprüft ob die Tests noch funktionieren und der Code die rich
    - schau nach ob dem Pull Request ein Ticket zugeordnet ist
    - setze dein Ticket auf `In Review`
 7. Warte auf die Code Review
-   - mehr Informationen dazu findest du im Abschnitt [Code Review](README.md#code-review)
+   - mehr Informationen dazu findest du im Abschnitt [Code Review](#code-review)
 8. Wenn der Pull Request genehmigt wurde, wird der Branch in den `sprint` Branch gemerged
 
