@@ -16,4 +16,9 @@
         <PackageReference Include="coverlet.collector" Version="6.0.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MaxTemp.Common\MaxTemp.Common.csproj" />
+      <ProjectReference Include="..\MaxTemp.Logic\MaxTemp.Logic.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxTemp.Data", "MaxTemp.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxTemp.Playground", "MaxTemp.Playground\MaxTemp.Playground.csproj", "{A13E06C5-72D9-44E6-B442-5FA55EF51167}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxTemp.Common", "MaxTemp.Common\MaxTemp.Common.csproj", "{DB44F29B-7708-4FB0-B567-9B50A3988670}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{A13E06C5-72D9-44E6-B442-5FA55EF51167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A13E06C5-72D9-44E6-B442-5FA55EF51167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A13E06C5-72D9-44E6-B442-5FA55EF51167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB44F29B-7708-4FB0-B567-9B50A3988670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB44F29B-7708-4FB0-B567-9B50A3988670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB44F29B-7708-4FB0-B567-9B50A3988670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB44F29B-7708-4FB0-B567-9B50A3988670}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
