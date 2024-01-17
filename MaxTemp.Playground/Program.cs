@@ -1,3 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using MaxTemp.Data;
+using MaxTemp.Logic;
 
-Console.WriteLine("Hello, World!");
+
+var repo = new TemperatureRepository();
+
+var service = new TemperatureService(repo);
+
+var maxTemp = service.GetMaxForSensor("sensor1");
+
+Console.WriteLine($"Max temperature for sensor1 is {maxTemp.Temperature} at {maxTemp.Timestamp}");

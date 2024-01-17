@@ -12,4 +12,8 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MaxTemp.Common\MaxTemp.Common.csproj" />
+    </ItemGroup>
+
 </Project>

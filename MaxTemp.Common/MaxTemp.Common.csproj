@@ -6,9 +6,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\MaxTemp.Common\MaxTemp.Common.csproj" />
-      <ProjectReference Include="..\MaxTemp.Data\MaxTemp.Data.csproj" />
-    </ItemGroup>
-
 </Project>
