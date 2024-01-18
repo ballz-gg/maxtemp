@@ -11,4 +11,10 @@
       <ProjectReference Include="..\MaxTemp.Data\MaxTemp.Data.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Splat">
+        <HintPath>..\..\..\.nuget\packages\splat\14.4.1\lib\net6.0\Splat.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
