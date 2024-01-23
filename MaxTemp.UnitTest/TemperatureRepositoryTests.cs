@@ -13,7 +13,7 @@ public class TemperatureRepositoryTests
         // Arrange
         const string testData = "sensor1,2021-01-01 00:00:00,10.0";
         var repository = new TemperatureRepository(testData);
-        var expected = new TemperatureEntry("sensor1", new DateTime(2021,1,1,0,0,0), 10.0);
+        var expected = new TemperatureEntry("sensor1", new DateTime(2021,1,1,0,0,0), 10.0m);
         
         // Act
         var actual = repository.GetAllEntries().First();
