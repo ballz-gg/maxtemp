@@ -51,4 +51,20 @@ public class TemperatureRepository: ITemperatureRepository
     {
         return Data;
     }
+
+    public IEnumerable<TemperatureEntry> GetEntryForSensor(string sensorId)
+    {
+        var sensorData = Data.Where(x => x.SensorId == sensorId);
+        if(!sensorData.Any()) 
+        {
+            throw new ArgumentOutOfRangeException(nameof(sensorId), $"No data found for sensor {sensorId}");
+        }
+
+        return sensorData;
+    }
+
+    public IEnumerable<string> GetAllSensors()
+    {
+        return Data.Select(x => x.SensorId).Distinct();
+    }
 }

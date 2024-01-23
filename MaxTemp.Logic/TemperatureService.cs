@@ -13,8 +13,21 @@ public class TemperatureService: ITemperatureService
         _repository = repository ?? Locator.Current.GetService<ITemperatureRepository>() ?? throw new ArgumentNullException(nameof(repository));
     }
 
+    public double GetAverageForSensor(string sensorId)
+    {
+        var sensorData = _repository.GetEntryForSensor(sensorId);
+        return sensorData.Average(x => x.Temperature);
+    }
+
     public TemperatureEntry GetMaxForSensor(string sensorId)
     {
-        throw new NotImplementedException();
+        var sensorData = _repository.GetEntryForSensor(sensorId);
+        return sensorData.OrderByDescending(x => x.Temperature).First();
+    }
+
+    public TemperatureEntry GetMinForSensor(string sensorId)
+    {
+        var sensorData = _repository.GetEntryForSensor(sensorId);
+        return sensorData.OrderBy(x => x.Temperature).First();
     }
 }
