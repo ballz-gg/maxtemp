@@ -1,5 +1,9 @@
 # MaxTemp
 
+## Dokumentation zu verschiedene Themen
+
+[Depenency Injection](docs/DI.md)
+
 ## Organisation
 
 ### Strategie für dieses Git Projekt

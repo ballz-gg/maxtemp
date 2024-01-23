@@ -11,4 +11,8 @@
       <ProjectReference Include="..\MaxTemp.Data\MaxTemp.Data.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Splat" Version="14.8.12" />
+    </ItemGroup>
+
 </Project>
