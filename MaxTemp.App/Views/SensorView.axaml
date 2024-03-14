@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:MaxTemp.App.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="450"
+             x:Class="MaxTemp.App.Views.SensorView"
+             x:DataType="vm:SensorViewModel">
+    <Design.DataContext>
+        <vm:DesignSensorViewModel/>
+    </Design.DataContext>
+    <Border Background="#282828">
+        <StackPanel Margin="20">
+            <TextBlock FontSize="30" Text="{Binding SensorId}"/>
+            <TextBlock Text="{Binding Average, StringFormat='Average Temp: {0:.00} °C'}" Margin="0 0 0 10"/>
+            <TextBlock Text="{Binding Max.Temperature, StringFormat='Max Temp: {0:.00} °C'}"/>
+            <TextBlock Text="{Binding Max.Timestamp, StringFormat='    {0}'}" Margin="0 0 0 10"/>
+            <TextBlock Text="{Binding Min.Temperature, StringFormat='Min Temp: {0:.00} °C'}"/>
+            <TextBlock Text="{Binding Min.Timestamp, StringFormat='    {0}'}" Margin="0 0 0 10"/>
+        </StackPanel>
+    </Border>
+</UserControl>
