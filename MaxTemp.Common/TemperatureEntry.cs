@@ -2,7 +2,7 @@
 
 public class TemperatureEntry
 {
-    public TemperatureEntry(string sensorId, DateTime timestamp, double temperature)
+    public TemperatureEntry(string sensorId, DateTime timestamp, decimal temperature)
     {
         SensorId = sensorId;
         Timestamp = timestamp;
@@ -11,5 +11,5 @@ public class TemperatureEntry
 
     public string SensorId { get; set; }
     public DateTime Timestamp { get; set; }
-    public double Temperature { get; set; }
+    public decimal Temperature { get; set; }
 }

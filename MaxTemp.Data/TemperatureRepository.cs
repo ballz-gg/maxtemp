@@ -1,4 +1,5 @@
-﻿using MaxTemp.Common;
+﻿using System.Globalization;
+using MaxTemp.Common;
 
 namespace MaxTemp.Data;
 
@@ -40,7 +41,7 @@ public class TemperatureRepository: ITemperatureRepository
 
             var serverId = fields[0];
             var dt = DateTime.Parse(fields[1]);
-            var temperature =  Double.Parse(fields[2]);
+            var temperature =  Decimal.Parse(fields[2], new NumberFormatInfo { NumberDecimalSeparator = "." });
             
             result.Add(new (serverId, dt, temperature));
         }

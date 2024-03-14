@@ -13,7 +13,7 @@ public class TemperatureService: ITemperatureService
         _repository = repository ?? Locator.Current.GetService<ITemperatureRepository>() ?? throw new ArgumentNullException(nameof(repository));
     }
 
-    public double GetAverageForSensor(string sensorId)
+    public decimal GetAverageForSensor(string sensorId)
     {
         var sensorData = _repository.GetEntryForSensor(sensorId);
         return sensorData.Average(x => x.Temperature);
